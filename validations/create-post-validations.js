@@ -7,9 +7,9 @@ export const createPostValidation = [
     .withMessage("El titulo debe ser un string"),
   body("desc")
     .notEmpty()
-    .withMessage("El titulo es requerido")
+    .withMessage("La descripcion es requerida")
     .isString()
-    .withMessage("El titulo debe ser un string")
+    .withMessage("La descripcion debe ser un string")
     .body("image")
     .notEmpty()
     .withMessage("La imagen es requerida.")
